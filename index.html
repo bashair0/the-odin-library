@@ -105,25 +105,65 @@
         </header>
 
         <section class="shelves">
-          <div class="currently-shelf">
+          <div class="">
             <h2 class="shelf-header">Currently reading</h2>
-            <ul class="flex" data-book-list>
-              <li class="book-cover">
-                <span class="book-author">By author</span
-                ><span class="book-title">The hobbit</span>
-                <span class="book-pages">222 pages</span>
-              </li>
+            <ul class="currently-shelf shelf" data-book-list>
+              <div class="cover">
+                <li class="book-cover">
+                  <span class="book-author">By author</span>
+                  <span class="book-title">Book title</span>
+                  <span class="book-pages">xxx pages</span>
+                </li>
+                <div class="cover-buttons">
+                  <button type="button" class="btn cover-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      height="20px">
+                      <path
+                        d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                    </svg>
+                    Finished
+                  </button>
+                  <button type="button" class="btn cover-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      height="20px"
+                      fill="#d5304b">
+                      <path
+                        d="M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V5H19V19M17,8.4L13.4,12L17,15.6L15.6,17L12,13.4L8.4,17L7,15.6L10.6,12L7,8.4L8.4,7L12,10.6L15.6,7L17,8.4Z" />
+                    </svg>
+                    Remove
+                  </button>
+                </div>
+              </div>
             </ul>
           </div>
 
-          <div class="currently-shelf">
+          <div class="">
             <h2 class="shelf-header">Finished</h2>
-            <ul class="flex" data-finished-list>
-              <li class="book-cover">
-                <span class="book-author">By author</span>
-                <span class="book-title">The lord of the ring</span>
-                <span class="book-pages">222 pages</span>
-              </li>
+            <ul class="currently-shelf shelf" data-finished-list>
+              <div class="cover">
+                <li class="book-cover">
+                  <span class="book-author">By author</span>
+                  <span class="book-title">Book title</span>
+                  <span class="book-pages">xxx pages</span>
+                </li>
+                <div class="cover-buttons">
+                  <button type="button" class="btn cover-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      height="20px"
+                      fill="#d5304b">
+                      <path
+                        d="M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V5H19V19M17,8.4L13.4,12L17,15.6L15.6,17L12,13.4L8.4,17L7,15.6L10.6,12L7,8.4L8.4,7L12,10.6L15.6,7L17,8.4Z" />
+                    </svg>
+                    Remove
+                  </button>
+                </div>
+              </div>
             </ul>
           </div>
         </section>

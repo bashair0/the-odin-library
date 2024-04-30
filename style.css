@@ -125,12 +125,27 @@ a {
   padding-inline: 1.5rem;
 }
 
+.cover-btn {
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
+}
+
 .shelves {
   margin: 1.5rem;
 
   > div {
     margin-bottom: 2rem;
   }
+}
+
+.shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 1rem;
 }
 
 .currently-shelf {
@@ -160,6 +175,8 @@ a {
   border-left: 5px ridge hsl(224, 12%, 19%);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
+  position: relative;
+
   > span {
     display: block;
   }
@@ -171,13 +188,33 @@ a {
   > .book-author {
     text-transform: capitalize;
     font-size: 0.8rem;
-    color: hsl(350, 66%, 51%);
+    color: #d5304b;
   }
 
   > .book-pages {
     font-size: 0.6rem;
     align-self: end;
   }
+}
+
+.cover {
+  position: relative;
+  width: fit-content;
+}
+
+.cover-buttons {
+  position: absolute;
+  top: 0;
+  width: 8rem;
+  height: 120px;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+}
+
+.cover:hover .cover-buttons {
+  opacity: 1;
 }
 
 .form-section {
@@ -190,6 +227,7 @@ a {
 
   display: grid;
   place-items: center;
+  z-index: 99;
 }
 
 .add-form {
@@ -226,4 +264,8 @@ a {
   text-align: center;
   margin-top: 1.2rem;
   font-size: 0.7rem;
+
+  a {
+    text-decoration: underline;
+  }
 }
