@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/bashair0/)
-- Live Site URL: [live site URL](https://bashair0.github.io/)
+- Solution URL: [solution URL](https://github.com/bashair0/the-odin-library?tab=readme-ov-file)
+- Live Site URL: [live site URL](https://bashair0.github.io/the-odin-library/)
 
 ## My process
 
