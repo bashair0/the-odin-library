@@ -29,14 +29,13 @@ submitButton.addEventListener('click', e => {
   updateLibrary()
 })
 
-function Book (title, author, pagesNum, isRead) {
-  ;(this.title = title),
-    (this.author = author),
-    (this.pagesNum = pagesNum),
-    (this.isRead = isRead),
-    (this.info = function () {
-      return `${this.title} by ${this.author}, ${this.pagesNum} pages, ${this.isRead}`
-    })
+class Book {
+  constructor (title, author, pagesNum, isRead) {
+    this.title = title
+    this.author = author
+    this.pagesNum = pagesNum
+    this.isRead = isRead
+  }
 }
 
 function addBookToLibrary () {
