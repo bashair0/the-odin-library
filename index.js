@@ -21,7 +21,12 @@ const finished = []
 const submitButton = document.querySelector('[data-submit]')
 submitButton.addEventListener('click', e => {
   e.preventDefault()
-  addBookToLibrary()
+
+  const titleValue = document.querySelector('[data-title]').value
+  const authorValue = document.querySelector('[data-author]').value
+  const pagesNumValue = document.querySelector('[data-pages-num]').value
+  if (!titleValue || !authorValue || !pagesNumValue) return
+  addBookToLibrary(titleValue, authorValue, pagesNumValue)
 
   form.reset()
   hideForm()
@@ -38,11 +43,8 @@ class Book {
   }
 }
 
-function addBookToLibrary () {
+function addBookToLibrary (titleValue, authorValue, pagesNumValue) {
   const isFinished = document.querySelector('[data-finished]')
-  const titleValue = document.querySelector('[data-title]').value
-  const authorValue = document.querySelector('[data-author]').value
-  const pagesNumValue = document.querySelector('[data-pages-num]').value
   const newBook = new Book(
     titleValue,
     authorValue,
